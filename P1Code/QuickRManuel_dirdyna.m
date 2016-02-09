@@ -39,7 +39,7 @@ M = [m1+m2+m3       M12 m3*cos(theta1) 0            0;
      0              0   0              0            m5*(L5^2)+I5];
  
 
-c = [-(L2/2)*m2*(theta1_point)^2-m3*theta1_point*(x2*theta1-point*cos(theta1)+2*x2_point*sin(theta1);
+c = [-(L2/2)*m2*(theta1_point)^2*cos(theta1)-m3*theta1_point*(x2*theta1_point*cos(theta1)+2*x2_point*sin(theta1));
                                        2*m3*x2*x2_point*theta1_point;
                                           -m3*x2*(theta1_point)^2;
                                                     0;
