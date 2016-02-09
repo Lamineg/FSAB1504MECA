@@ -2,7 +2,8 @@
 
 % Initialisation de la structure data
 data.m   = [ 16.0, 4.5, 1.5, 1.0, 2.0 ]; % [Kg]
-data.dOA = [ 100, 250, ]               ; % [mm]
+data.dOA = [ 100,  250, ]              ; % [mm]
+data.L   = [   0,  530,   0,  100, 100]; % [mm]
 data.q   = [   0,   0,    0,   0,   0 ]; % q=(x1,theta1,x2,theta2,theta3)
 data.qd  = [   0,   0,    0,   0,   0 ];
 data.dqq = [   0,   0,    0,   0,   0 ];
