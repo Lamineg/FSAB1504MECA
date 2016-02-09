@@ -18,6 +18,7 @@ L2     = 530;
 L4     = 100;
 L5     = 100;
 
+%dérivée de la Jacobienne
 Jpoint = [0 -x2_point*sin(theta1)-x2*theta1_point*cos(theta1)...
                    -theta1_point*sin(theta1) L4*theta2_point*cos(theta2) 0;
           0 -x2_point*cos(theta1)-x2*theta1_point*sin(theta1)...
