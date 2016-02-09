@@ -13,6 +13,12 @@ x2     = data.q(3);
 theta2 = data.q(4);
 theta3 = data.q(5);
 
+x1_point     = data.qd(1);
+theta1_point = data.qd(2);
+x2_point     = data.qd(3);
+theta2_point = data.qd(4);
+theta3_point = data.qd(5);
+
 I2 = data.I2;
 I3 = data.I3;
 I4 = data.I4;
@@ -33,7 +39,10 @@ M = [m1+m2+m3       M12 m3*cos(theta1) 0            0;
      0              0   0              0            m5*(L5^2)+I5];
  
 
-
+c = [-(L2/2)*m2*(theta1_point)^2-m3*theta1_point*(x2*theta1-point*cos(theta1)+2*x2_point*sin(theta1);
+                                       2*m3*x2*x2_point*theta1_point;
+                                          -m3*x2*(theta1_point)^2;
+                                                    0;
+                                                    0];
 
 end
-
