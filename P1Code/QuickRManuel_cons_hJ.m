@@ -4,7 +4,7 @@ function [ h, Jac] = QuickRManuel_cons_hJ(data)
 
 
 
-% Pour facilité les relectures
+% Pour faciliter les relectures
 x1     = data.q(1);
 theta1 = data.q(2);
 x2     = data.q(3);
