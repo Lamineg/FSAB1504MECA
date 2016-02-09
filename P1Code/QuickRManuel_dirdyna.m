@@ -32,13 +32,14 @@ M12 = -(L2/2)*m2*sin(theta1) - m3*x2*sin(theta1);
 M21 = M12;
 M22 = (L2^2)*m2/4 + I2 + m3*x2^2 + I3;
 
+%Matrice de masse
 M = [m1+m2+m3       M12 m3*cos(theta1) 0            0;
      M21            M22 0              0            0;
      m3*cos(theta1) 0   m3             0            0;
      0              0   0              m4*(L4^2)+I4 0;
      0              0   0              0            m5*(L5^2)+I5];
  
-
+%vecteur dynamique c
 c = [-(L2/2)*m2*(theta1_point)^2*cos(theta1)-m3*theta1_point*(x2*theta1_point*cos(theta1)+2*x2_point*sin(theta1));
                                        2*m3*x2*x2_point*theta1_point;
                                           -m3*x2*(theta1_point)^2;
