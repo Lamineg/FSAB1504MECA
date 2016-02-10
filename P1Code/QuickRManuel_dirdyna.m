@@ -2,10 +2,10 @@ function [ M, c ] = QuickRManuel_dirdyna( data )
 % @pre structure data
 % @post renvoie la matrice de masse M, et le vecteur dynamique c
 
-m1=data.m1; 
-m2=data.m2; 
-m3=data.m3;
-m4=data.m4;
+m1=data.m(1); 
+m2=data.m(2); 
+m3=data.m(3);
+m4=data.m(4);
 
 x1     = data.q(1);
 theta1 = data.q(2);
